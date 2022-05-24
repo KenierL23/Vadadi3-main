@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculoTrip">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/botonVolver"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            app:icon="@drawable/atras"
+            app:iconTint="#FF990D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/vadadi"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="#FF990D"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/InicioViaje"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="6dp"
+
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_field"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Punto de partida"
+        android:inputType="textCapCharacters"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/Destino"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/ic_field"
+        android:drawablePadding="18dp"
+        android:ems="10"
+        android:hint="Destino"
+        android:inputType="textCapCharacters"
+        android:padding="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotonIr"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/ic_buttom"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:text="Calcular"
+        android:textColor="@color/white" />
+
+
+</FrameLayout>

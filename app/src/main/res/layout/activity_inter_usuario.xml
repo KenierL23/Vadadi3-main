@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterUsuario">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="430dp"
+        android:layout_height="78dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ButtonFavoritos"
+        android:layout_width="102dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/estrellan" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="113dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gps" />
+
+    <ImageButton
+        android:id="@+id/Botonmiperfil"
+        android:layout_width="106dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hombre" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="297dp"
+        android:layout_marginTop="527dp"
+        android:text="Mi perfil" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="527dp"
+        android:text="favortos" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="140dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/captura_3" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/botonVolver2"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            app:icon="@drawable/atras"
+            app:iconTint="#FF990D" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/vadadi"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="#FF990D"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="527dp"
+        android:text="Ubicacion" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotonC"
+        android:layout_width="290dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/ic_buttom"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:text="Calcular"
+        android:textColor="@color/white" />
+
+</FrameLayout>
