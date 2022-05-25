@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.vadadi3.databinding.ActivityLoginBinding
 
+
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {

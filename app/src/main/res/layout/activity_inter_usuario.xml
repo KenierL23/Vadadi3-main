@@ -50,9 +50,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="297dp"
+        android:layout_marginLeft="310dp"
         android:layout_marginTop="527dp"
-        android:text="Mi perfil" />
+        android:text="Mi perfil"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,15 +61,16 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="57dp"
         android:layout_marginTop="527dp"
-        android:text="favortos" />
+        android:text="favortos"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="189dp"
         android:layout_marginTop="140dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/captura_3" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/location" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -91,6 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
             android:text="@string/vadadi"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:textColor="#FF990D"
@@ -103,7 +106,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175dp"
         android:layout_marginTop="527dp"
-        android:text="Ubicacion" />
+        android:text="Ubicacion"
+        android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BotonC"
