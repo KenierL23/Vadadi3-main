@@ -11,5 +11,6 @@ class FavoritosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFavoritosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }

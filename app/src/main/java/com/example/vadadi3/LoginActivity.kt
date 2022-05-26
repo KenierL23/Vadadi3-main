@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.vadadi3.databinding.ActivityLoginBinding
+import com.example.vadadi3.databinding.ActivityLoginBinding.*
 
 
 class LoginActivity : AppCompatActivity() {
@@ -18,16 +19,23 @@ class LoginActivity : AppCompatActivity() {
             Usuario(
                 usuario = "felipe23", contraseña = "pipe123", Nombre = "Felipe",
                 Apellido = "Gonzalez", Telefono = 321334413, Correo = "pipe23@gmail.com"
+            ),Usuario(
+                usuario = "Alejandro", contraseña = "0000", Nombre = "Alejandro",
+                Apellido = "Franco", Telefono = 324553413, Correo = "Alejandro123@gmail.com"
+            ),Usuario(
+                usuario = "k", contraseña = "0", Nombre = "Felipe",
+                Apellido = "Gonzalez", Telefono = 321334413, Correo = "k@gmail.com"
             )
         )
-        var UsuarioLoging="David15"
+        var UsuarioLoging=""
+
     }
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.BotonC.setOnClickListener {//logica para el boton
@@ -49,20 +57,20 @@ class LoginActivity : AppCompatActivity() {
                 var estadoUsuario = false
                 var estadoContra = false
                 for(usuario in personas){
-                    if (usuario.usuario ===binding.emailEditText.text.toString() ){
+                    if (usuario.usuario == binding.emailEditText.text.toString() && usuario.contraseña == binding.passwordEditText.text.toString() ){
                         estadoUsuario = true
-
-                    }
-                    if (usuario.contraseña === binding.passwordEditText.text.toString() ){
                         estadoContra = true
+                        break
 
                     }
+
 
 
                 }
                 if(estadoUsuario && estadoContra){
                     val intent = Intent(applicationContext, InterUsuario::class.java)
                     UsuarioLoging = binding.emailEditText.text.toString()
+
                     startActivity(intent)
                 }else{
                     Toast.makeText(

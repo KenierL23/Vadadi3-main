@@ -14,6 +14,7 @@ class InterUsuario : AppCompatActivity() {
         binding = ActivityInterUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.BotonC.setOnClickListener {//logica para el boton
 
             val intent = Intent(applicationContext, calculoTrip::class.java)
@@ -29,6 +30,11 @@ class InterUsuario : AppCompatActivity() {
 
             val intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
+        }
+        binding.ButtonFavoritos.setOnClickListener{
+            val intent = Intent(applicationContext, MainActivityfavavoritosav::class.java)
+            startActivity(intent)
+
         }
 
 
