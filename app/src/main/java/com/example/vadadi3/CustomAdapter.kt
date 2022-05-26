@@ -1,10 +1,12 @@
 package com.example.vadadi3
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vadadi3.R
 
@@ -31,6 +33,12 @@ class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
         viewHolder.itemTitle.text = titles[i]
         viewHolder.itemDetail.text = details[i]
         viewHolder.itemImage.setImageResource(images[i])
+        viewHolder.itemImage.setOnClickListener{
+            val intent = Intent(viewHolder.itemView.context, Viajando::class.java)
+            viewHolder.itemView.context.startActivity(intent)
+
+
+        }
     }
 
     override fun getItemCount(): Int {
