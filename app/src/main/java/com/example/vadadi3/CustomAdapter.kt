@@ -10,8 +10,11 @@ import com.example.vadadi3.R
 
 class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
-   val titles = arrayOf("Tiempo","dinero","uber")
-    val details = arrayOf("casa","x","uber","Recomendad")
+
+
+   val titles = arrayOf("Casa","Trabajo","Calle 64A1")
+
+    val details = arrayOf("200$ 5minaprox, Beat","300$ 20min aprox, DIDI","600$ 30Min, Uber","Recomendad")
     val images = arrayOf(
         R.drawable.ic_launcher_foreground,
         R.drawable.ic_launcher_foreground,

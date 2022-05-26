@@ -22,6 +22,11 @@ class calculoTrip : AppCompatActivity() {
             val intent = Intent(applicationContext, InterUsuario::class.java)
             startActivity(intent)
         }
+        binding.BotonIr.setOnClickListener{
+            val intent = Intent(applicationContext, Viajando::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
