@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
                         estadoUsuario = true
 
                     }
-                    if (usuario.contraseña ===binding.passwordEditText.text.toString() ){
+                    if (usuario.contraseña === binding.passwordEditText.text.toString() ){
                         estadoContra = true
 
                     }
@@ -71,16 +71,11 @@ class LoginActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-
             }
         }
-
-
-
         binding.signUpTextView.setOnClickListener {
             val intent = Intent(applicationContext, MiperfilActivity::class.java)
             startActivity(intent)
         }
     }
-
 }
