@@ -21,8 +21,8 @@
         android:layout_height="115dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="400dp"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="centerInside"
         android:src="@drawable/estrellan" />
 
     <ImageButton
@@ -31,8 +31,8 @@
         android:layout_height="119dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="400dp"
-        android:backgroundTint="@color/white"
-        android:scaleType="centerCrop"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="centerInside"
         android:src="@drawable/gps" />
 
     <ImageButton
@@ -42,8 +42,8 @@
         android:layout_marginStart="280dp"
         android:layout_marginLeft="250dp"
         android:layout_marginTop="400dp"
-        android:backgroundTint="@color/white"
-        android:scaleType="centerCrop"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="fitEnd"
         android:src="@drawable/hombre" />
 
     <TextView
@@ -70,7 +70,7 @@
         android:layout_height="189dp"
         android:layout_marginTop="140dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/location" />
+        app:srcCompat="@drawable/locationpint" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
